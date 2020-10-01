@@ -5,7 +5,13 @@ const mongoose = require("mongoose");
 
 // assemble mongoDB atlas connection string from .env 
 // (or from server secrets on codesandbox.io)
+
 const mongoUser = process.env.DB_USER;
+if (mongoUser===undefined){
+    console.log("You need to define .env on local or server secrets on codesandbox");
+    console.log("DB_USER, DB_PASS, DB_URL and DB_COLLECTION have to be set!");
+    process.exit();
+}
 const mongoPassword = process.env.DB_PASS;
 const mongoCollection = process.env.DB_COLLECTION;
 const mongoURL = `${process.env.DB_URL
