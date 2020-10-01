@@ -1,0 +1,31 @@
+{
+  "name": "exercise-mongoose-express",
+  "version": "1.0.0",
+  "description": "WBS Coding school exercise and node.js+mongoose+express",
+  "main": "src/server.js",
+  "scripts": {
+    "test": "nodemon src/server.js",
+    "start": "nodemon src/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "not yet"
+  },
+  "keywords": [
+    "node.js",
+    "mongoose",
+    "express",
+    "mongodb",
+    "javascript"
+  ],
+  "author": "J",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.10.7",
+    "os": "^0.1.1"
+  }
+}
